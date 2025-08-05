@@ -72,16 +72,16 @@ const PhaseNavigation = ({ activePhase, onPhaseChange }: PhaseNavigationProps) =
               )}
             </div>
             
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <Button
                 variant={activePhase === phase.id ? "solid" : "ghost"}
                 size="sm"
-                className="w-full justify-start h-auto p-3"
+                className="w-full justify-start h-auto p-3 text-left"
                 onClick={() => onPhaseChange(phase.id)}
               >
-                <div className="text-left">
-                  <div className="font-medium">Phase {index + 1}: {phase.title}</div>
-                  <div className="text-xs opacity-80 mt-1">{phase.description}</div>
+                <div className="text-left w-full overflow-hidden">
+                  <div className="font-medium text-sm truncate">Phase {index + 1}: {phase.title}</div>
+                  <div className="text-xs opacity-80 mt-1 line-clamp-2">{phase.description}</div>
                 </div>
               </Button>
             </div>

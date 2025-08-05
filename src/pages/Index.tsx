@@ -48,9 +48,9 @@ const Index = () => {
       <SwiftHeader />
       
       <div className="container mx-auto px-6 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 h-full">
           {/* Sidebar Navigation */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 h-fit">
             <PhaseNavigation 
               activePhase={activePhase} 
               onPhaseChange={setActivePhase} 
@@ -58,7 +58,7 @@ const Index = () => {
           </div>
           
           {/* Main Content */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3 min-w-0">
             {activePhase === "dashboard" ? (
               <SwiftDashboard />
             ) : (
