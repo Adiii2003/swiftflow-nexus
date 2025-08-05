@@ -1,6 +1,6 @@
 # SwiftFlow nexus
 
-SwiftFlow Automata is a cross‑border payment processing application built with **Vite**, **React**, **TypeScript**, **Tailwind CSS**, and **shadcn‑ui**.  
+SwiftFlow Automata is a cross‑border payment processing application built with **HTML**, **CSS**, **JavaScript**.  
 It provides a fast, modular, and scalable architecture for modern financial applications.
 
 ---
